@@ -21,4 +21,5 @@ spec:
           ports:
             - containerPort: 7280
             - containerPort: 7281
+          command: ["run"]
       restartPolicy: {{ $.Values.restartPolicy }}

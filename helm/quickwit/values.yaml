@@ -6,4 +6,4 @@ restartPolicy: Always
 wait_time: 10
 image:
   path: quickwit/quickwit
-  tag: edge
+  tag: latest
