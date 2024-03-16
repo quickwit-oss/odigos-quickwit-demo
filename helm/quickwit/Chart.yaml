@@ -1,0 +1,10 @@
+---
+apiVersion: v2
+description: Quickwit
+name: quickwit
+version: 0.1.1
+
+dependencies:
+  - name: quickwit
+    version: 0.5.3
+    repository: https://helm.quickwit.io

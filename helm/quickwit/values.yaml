@@ -1,0 +1,6 @@
+---
+quickwit:
+  image:
+    repository: quickwit/quickwit
+    pullPolicy: Always
+    tag: edge
