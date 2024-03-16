@@ -1,6 +1,6 @@
 dependencies:
-- name: quickwit
-  repository: https://helm.quickwit.io
-  version: 0.5.3
-digest: sha256:ca9c43ca21b662ea77e2b524072cbe1a6abeee733228346840d6a668699f973a
-generated: "2024-03-16T14:12:01.367866+01:00"
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  version: 1.17.1
+digest: sha256:dacc73770a5640c011e067ff8840ddf89631fc19016c8d0a9e5ea160e7da8690
+generated: "2024-03-16T14:21:12.875414+01:00"

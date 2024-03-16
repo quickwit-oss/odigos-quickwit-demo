@@ -17,5 +17,5 @@ helm template . --values values.yaml|kubectl -n imalive apply -f -
 kubectl create ns quickwit
 cd helm/quickwit
 helm dependency update
-helm template . --values values.yaml|kubectl -n imalive apply -f -
+helm template . --values values.yaml|kubectl -n quickwit apply -f -
 ```

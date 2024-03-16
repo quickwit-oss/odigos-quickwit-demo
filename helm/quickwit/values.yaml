@@ -1,6 +1,9 @@
 ---
-quickwit:
-  image:
-    repository: quickwit/quickwit
-    pullPolicy: Always
-    tag: edge
+replicas: 1
+http_port: 7280
+otlp_grpc_port: 7281
+restartPolicy: Always
+wait_time: 10
+image:
+  path: quickwit/quickwit
+  tag: edge
