@@ -16,10 +16,11 @@ spec:
         app: {{ include "common.names.fullname" . }}
     spec:
       containers:
-        - image: {{ print $.Values.image.path ":" $.Values.image.tag}}
+        - image: {{ print $.Values.image.path ":" $.Values.image.tag }}
           name: {{ include "common.names.fullname" . }}
           ports:
             - containerPort: 7280
             - containerPort: 7281
-          command: ["run"]
+          command: ["quickwit"]
+          args: ["run"]
       restartPolicy: {{ $.Values.restartPolicy }}
