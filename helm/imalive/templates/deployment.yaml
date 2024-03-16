@@ -1,0 +1,38 @@
+---
+apiVersion: {{ include "common.capabilities.deployment.apiVersion" $ }}
+kind: Deployment
+metadata:
+  labels:
+    app: {{ include "common.names.fullname" . }}
+  name: {{ include "common.names.fullname" . }}
+spec:
+  replicas: {{ $.Values.replicas }}
+  selector:
+    matchLabels:
+      app: {{ include "common.names.fullname" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "common.names.fullname" . }}
+    spec:
+      containers:
+        - image: {{ print $.Values.image.path ":" $.Values.image.tag}}
+          name: {{ include "common.names.fullname" . }}
+          ports:
+            - containerPort: 8080
+          env:
+            - name: IMALIVE_NODE_NAME
+              value: {{ include "common.names.fullname" . }}
+            - name: WAIT_TIME
+              value: {{ $.Values.wait_time | quote }}
+            - name: LOG_LEVEL
+              value: {{ $.Values.log.level | quote }}
+            - name: LOG_FORMAT
+              value: {{ $.Values.log.format | quote }}
+
+            {{ if $.Values.otlp_endpoint }}
+            - name: OTEL_COLLECTOR_ENDPOINT
+              value: {{ $.Values.otlp_endpoint | quote }}
+            {{ end }}
+
+      restartPolicy: {{ $.Values.restartPolicy }}

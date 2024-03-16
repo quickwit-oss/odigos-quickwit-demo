@@ -1,0 +1,15 @@
+---
+replicas: 1
+service_port: 8089
+restartPolicy: Always
+wait_time: 10
+image:
+  path: comworkio/imalive-api
+  tag: latest
+
+log:
+  level: INFO
+  format: json
+
+ingress:
+  enable: false
