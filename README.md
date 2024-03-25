@@ -1,6 +1,13 @@
 # odigos-test
 
-1. Test odigos following their [CONTRIBUTING.md](https://github.com/keyval-dev/odigos/blob/main/CONTRIBUTING.md)
+1. Install and run odigos (version v1.0.49 at least) on a kind cluster:
+
+```shell
+brew install keyval-dev/homebrew-odigos-cli/odigos
+odigos version
+kind create cluster
+odigos install
+```
 
 2. Run [imalive](https://github.com/comworkio/imalive) on the same kind cluster that is used by odigos
 
