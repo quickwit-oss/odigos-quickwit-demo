@@ -54,3 +54,7 @@ URL of endpoint: `release-name-quickwit.quickwit.svc.cluster.local:7281`
 Then you should see this overview:
 
 ![odigos_overview](./img/odigos_overview.png)
+
+Then you should see the logs coming into quickwit:
+
+![quickwit_logs](./img/quickwit_logs.png)
