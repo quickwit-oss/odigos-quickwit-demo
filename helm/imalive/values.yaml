@@ -10,6 +10,7 @@ image:
 log:
   level: INFO
   format: json
+  otlp_endpoint: 0.0.0.0:4317
 
 ingress:
   enable: false

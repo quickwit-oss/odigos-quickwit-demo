@@ -20,6 +20,7 @@ spec:
           name: {{ include "common.names.fullname" . }}
           ports:
             - containerPort: 8080
+            - containerPort: 4317
           env:
             - name: IMALIVE_NODE_NAME
               value: {{ include "common.names.fullname" . }}
