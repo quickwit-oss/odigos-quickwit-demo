@@ -23,7 +23,7 @@ kind create cluster
 odigos install
 ```
 
-2. Run [imalive](https://github.com/comworkio/imalive) on the same kind cluster that is used by odigos
+2. Run [imalive](https://github.com/comworkio/imalive) on the same kind cluster that is used by odigos. It's an OTEL observable metrics exporter.
 
 ```shell
 kubectl create ns imalive
