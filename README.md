@@ -1,5 +1,11 @@
 # odigos-test
 
+## Introduction
+
+Demo of the [quickwit destination of odigos](https://docs.odigos.io/backends/quickwit).
+
+It has been made with this [pull request](https://github.com/keyval-dev/odigos/pull/907) and released in the v1.0.49.
+
 ## Demo
 
 You can download the demo here
