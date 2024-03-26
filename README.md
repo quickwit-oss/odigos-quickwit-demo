@@ -8,7 +8,7 @@ It has been made with this [pull request](https://github.com/keyval-dev/odigos/p
 
 ## Demo
 
-You can download the demo here
+You can download the video of the demo here:
 
 [![demo_preview](./medias/demo_preview.png)](./medias/demo.mp4)
 
