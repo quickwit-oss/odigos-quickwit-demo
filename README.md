@@ -1,5 +1,11 @@
 # odigos-test
 
+## Demo
+
+![demo](./medias/demo.mp4)
+
+## Try the demo by yourself
+
 1. Install and run odigos (version v1.0.49 at least) on a kind cluster:
 
 ```shell
@@ -35,26 +41,32 @@ kubectl -n quickwit port-forward svc/release-name-quickwit 7280:7280
 
 Then you can go to: http://localhost:7280
 
-5. Launch odigos on the browser: http://localhost:3000
+5. Launch odigos on the browser
+
+```shell
+odigos ui
+```
+
+Then you can go here: http://localhost:3000
 
 And select "imalive"
 
-![odigos_select_imalive](./img/odigos_select_imalive.png)
+![odigos_select_imalive](./medias/odigos_select_imalive.png)
 
 Then select the "Quickwit" destination
 
-![odigos_destination_quickwit](./img/odigos_destination_quickwit.png)
+![odigos_destination_quickwit](./medias/odigos_destination_quickwit.png)
 
 Then:
 
-![odigos_configure_connection](./img/odigos_configure_connection.png)
+![odigos_configure_connection](./medias/odigos_configure_connection.png)
 
 URL of endpoint: `release-name-quickwit.quickwit.svc.cluster.local:7281`
 
 Then you should see this overview:
 
-![odigos_overview](./img/odigos_overview.png)
+![odigos_overview](./medias/odigos_overview.png)
 
 Then you should see the logs coming into quickwit:
 
-![quickwit_logs](./img/quickwit_logs.png)
+![quickwit_logs](./medias/quickwit_logs.png)
