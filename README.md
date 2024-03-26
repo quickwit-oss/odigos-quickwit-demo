@@ -1,4 +1,4 @@
-# odigos-test
+# odigos-quickwit-demo
 
 ## Introduction
 
