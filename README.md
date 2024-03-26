@@ -2,7 +2,9 @@
 
 ## Demo
 
-![demo](./medias/demo.mp4)
+You can download the demo here
+
+[![demo_preview](./medias/demo_preview.png)](./medias/demo.mp4)
 
 ## Try the demo by yourself
 
